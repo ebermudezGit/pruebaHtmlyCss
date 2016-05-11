@@ -2,17 +2,22 @@
 
 html,body{
   font-family: Roboto;
+  background: #FFFFFF;
+  color: #5D5656;
+}
+section,span,a,h1,h2,h3,h4,h5{
+  padding: 0px;
+  margin: 0px;
 }
 
-#splash{
-    /*
+hr{
+  border: 0;
+  border-top: dashed #eee;
+  margin:50px 5% 50px 5%;
+}
 
-    background-image: url("../images/splash.jpeg");
-    background-size: cover;
-    background-position: top center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    */
+/**** splash *****/
+#splash{
     background: url("../images/splash.jpeg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -23,91 +28,160 @@ html,body{
     margin-top: 0px;
 }
 
+#splash h1{
+  font-size:3em;
+  text-shadow: 2px 2px 1px #222;
+  color:white; 
+  margin-top:60px;
+}
+
+#splash h3{
+  font-size:2em;
+  text-shadow: 2px 2px 1px #222;
+  color:white;
+  margin-top:60px;
+  text-align:center;
+}
+
 #logo{
+  margin-top: 50px;
   height:100px;
 }
 #ir{
   margin:50px auto;
 }
+/**** splash *****/
 
-/**/
+.fusiontexto{
+  position:absolute;
+}
+img.fusiontexto{width:100px;}
+p.fusiontexto{margin:50px 5% 50px 5%;}
+
 .jumbotron{
-  background-color: rgba(0, 0, 0, 0.45);
-  margin-bottom:0px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: inherit;
 }
 
 .remarcar{
-  padding: 20px 0px 20px 0px;
-  background-color:#86EBFF;
-  text-shadow: 2px 2px 1px #222;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.remarcar h2{
-  margin:0px;
-  font-family:HelveticaNeue-Light, sans-serif;
-  font-size:4em;
+.remarcar2{
+  background-color:rgb(126, 202, 173);
+}
+
+.remarcar2 h2{
+  text-shadow: 2px 2px 1px #222;
+  font-size:2.5em;
   color:white;
-  padding: 10px 0px 10px 0px; 
+  padding: 0px 40px 0px 40px;
+  margin: 80px 0 80px 0;
 }
 
 .remarcar h4{
-  font-family: HelveticaNeue-Light, sans-serif;
+  text-shadow: 2px 2px 1px #434343;
   color:white;
-  font-size:2em;
-  margin-bottom: 60px;
-  margin-top: 50px;
-  margin-bottom: 120px;
+  font-size:1.5em;
+  margin-bottom: 80px;
+  padding: 0px 60px 0px 60px;
 }
 
-h1{
-  text-shadow: 2px 2px 1px #222;
-  color:white; 
-  margin-top: 80px;
+.remarcar h3{
+  font-size:1em;
+  color: inherit;
+  background-color:#FFFFFF;
 }
 
-h2{
-  text-shadow: 2px 2px 1px #222;
-  color:white;
-  margin-top:30px;
+#inscripcion.remarcar{
+  text-align:left;
 }
 
-h3{
-  text-shadow: 2px 2px 1px #222;
-  color:white;
-  margin-top:5em;
-  text-align:center;
+#inscripcion iframe{
+  width:90%;
+  border:0
 }
-hr{
-  border-top:dashed #eee;
-  margin:50px 0 50px 0;
+#inscripcion p{
+  font-size:1em;
+  margin-top:20px;
+}
+#inscripcion h3{
+  font-size:1.5em;
+  margin-top:20px;
 }
 
-IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    position:relative;
-    top:0;
-    bottom:0;
-    margin:auto;
+#inscripcion{
+  padding-top: 50px;
 }
- 
+
+#forma form{
+  margin-top:30px;width:60%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+
+#octogato a{
+    z-index: 999999;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 166px;
+    margin: 0px;
+    padding: 0px
+}
+#octogato a:hover{
+    width: 100px;
+    margin-left: 66px;
+    /*-webkit-transform: rotate(15deg) scale(1.4);
+    transform: rotate(15deg) scale(1.4);*/
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#octogato img{width:260px;}
 
 /*texto*/
-.txtduda{
+.txtremarca{
   font-size:1.2em;
   margin-top:10px;
   font-weight:bold;
 }
 
-#inscripcion iframe{
-  border:0
+#asech{width: 180px;}
+#microsoft{width: 70px;}
+#latam{width: 70px;}
+#corfo{width: 110px;}
+
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
 }
 
-#inscripcion p{
-  font-size:1.2em;
-  margin-top:20px;
+.list-inline>li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-#forma form{
-  margin-top:30px;width:60%;
+.list-inline>li>a>img{
+  width:50px;
+}
+
+/*Media*/
+@media(max-width:1000px){
+  .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10{
+    width:90%;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+  }
+
 }
