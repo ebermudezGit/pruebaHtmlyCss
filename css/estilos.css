@@ -23,6 +23,12 @@ html,body{
     margin-top: 0px;
 }
 
+#logo{
+  height:100px;
+}
+#ir{
+  margin:50px auto;
+}
 
 /**/
 .jumbotron{
@@ -31,7 +37,9 @@ html,body{
 }
 
 .remarcar{
-  background-color:#7076FC;
+  padding: 20px 0px 20px 0px;
+  background-color:#86EBFF;
+  text-shadow: 2px 2px 1px #222;
 }
 
 .remarcar h2{
